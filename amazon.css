@@ -1,0 +1,446 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#eaeded;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height:70px;
+    background-color:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo img{
+    width:80px;
+    vertical-align:middle;
+}
+
+.logo span{
+    color:#ff9900;
+}
+
+.location{
+    cursor:pointer;
+}
+
+.search-bar{
+    display:flex;
+    width:50%;
+    height:40px;
+}
+
+.search-bar select{
+    width:60px;
+    border:none;
+    background:#f3f3f3;
+    border-radius:4px 0 0 4px;
+}
+
+.search-bar input{
+    width:100%;
+    border:none;
+    padding-left:10px;
+    font-size:15px;
+}
+
+.search-bar button{
+    width:100px;
+    border:none;
+    background:#febd69;
+    border-radius:0 4px 4px 0;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.search-bar button:hover{
+    background:#f3a847;
+}
+
+.account,
+.orders,
+.cart{
+    cursor:pointer;
+}
+
+.cart{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* MENU */
+
+.menu{
+    background:#232f3e;
+    height:40px;
+    display:flex;
+    align-items:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+.menu a:hover{
+    border:1px solid white;
+    padding:5px;
+}
+
+/* HERO */
+
+.hero{
+    height:350px;
+    background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+/* PRODUCTS */
+
+.product{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:30px;
+}
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5{
+    width:300px;
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover,
+.product5:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.product a{
+    display:block;
+    margin:10px 0;
+    text-decoration:none;
+    color:#007185;
+}
+
+.product a:hover{
+    color:#c7511f;
+}
+
+.price{
+    color:#B12704;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:gray;
+    font-size:14px;
+}
+
+.rating{
+    color:#ff9900;
+    margin:10px 0;
+}
+
+.cart-btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#ffd814;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.cart-btn:hover{
+    background:#f7ca00;
+}
+
+/* FOOTER */
+
+.foot-panel1{
+    background:#37475a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    cursor:pointer;
+}
+
+.foot-panel1:hover{
+    background:#485769;
+}
+
+.foot-panel2{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+.foot-panel2 ul{
+    display:flex;
+    flex-direction:column;
+}
+
+.foot-panel2 h3{
+    margin-bottom:15px;
+}
+
+.foot-panel2 a{
+    color:#dddddd;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+.foot-panel2 a:hover{
+    text-decoration:underline;
+}
+
+.foot-panel2 img{
+    width:18px;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.foot-panel3{
+    background:#232f3e;
+    border-top:1px solid #3a4553;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.foot-panel3 img{
+    width:90px;
+    margin-right:10px;
+}
+
+.foot-panel3 .logo{
+    color:white;
+    font-size:25px;
+}
+
+.foot-panel4{
+    background:#131a22;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.pages a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:13px;
+}
+
+.pages a:hover{
+    text-decoration:underline;
+}
+
+.copyright{
+    margin-top:10px;
+    font-size:12px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:10px;
+        gap:10px;
+    }
+
+    .search-bar{
+        width:95%;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        height:auto;
+        padding:10px;
+    }
+
+    .product1,
+    .product2,
+    .product3,
+    .product4,
+    .product5{
+        width:90%;
+    }
+}
+
+/* NAVBAR RIGHT */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.account a{
+    color:white;
+    text-decoration:none;
+}
+
+.account a:hover{
+    color:#febd69;
+}
+
+.cart i{
+    font-size:22px;
+    margin-right:5px;
+}
+
+/* LOGIN PAGE */
+
+.login-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:80px;
+}
+
+.login-box{
+    width:350px;
+    background:white;
+    padding:25px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.login-box h2{
+    margin-bottom:15px;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.login-box button{
+    width:100%;
+    padding:10px;
+    background:#FFD814;
+    border:none;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#F7CA00;
+}
+
+/* CHECKOUT */
+
+.checkout-section{
+    text-align:center;
+    margin:40px;
+}
+
+.checkout-btn{
+    background:#FFA41C;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.checkout-btn:hover{
+    background:#F08804;
+}
+
+.checkout-container{
+    width:450px;
+    background:white;
+    padding:25px;
+    margin:50px auto;
+    border-radius:8px;
+}
+
+.checkout-container h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.checkout-container input,
+.checkout-container select{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.checkout-container button{
+    width:100%;
+    padding:12px;
+    background:#FFD814;
+    border:none;
+    cursor:pointer;
+}
+
+.checkout-container button:hover{
+    background:#F7CA00;
+}
