@@ -39,12 +39,20 @@
 
         </div>
 
-    <div class="account">
-     <p>Hello, <span id="username-display">Sign In</span></p>
-     <h4>
-        <a href="login.html">Account & Lists</a>
-     </h4>
-    </div>
+   <div class="account">
+
+    <p>
+        Hello,
+        <span id="username-display">
+            Sign In
+        </span>
+    </p>
+
+    <h4 id="openLogin">
+        Account & Lists
+    </h4>
+
+</div>
 
         <div class="orders">
             <p>Returns</p>
@@ -153,15 +161,77 @@
     </div>
 </section>
       
-    <div class="checkout-section">
+    <!-- Login Modal -->
 
-    <a href="checkout.html">
+<div id="loginModal" class="modal">
 
-        <button class="checkout-btn">
-            Proceed To Checkout
+    <div class="modal-content">
+
+        <span class="close" id="closeLogin">&times;</span>
+
+        <h2>Sign In</h2>
+
+        <input type="text"
+               id="username"
+               placeholder="Enter Username">
+
+        <input type="password"
+               id="password"
+               placeholder="Enter Password">
+
+        <button id="loginSubmit">
+            Login
         </button>
 
-    </a>
+    </div>
+
+</div>
+ <!-- Checkout Modal -->
+
+<div id="checkoutModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" id="closeCheckout">
+            &times;
+        </span>
+
+        <h2>Checkout</h2>
+
+        <input type="text"
+               placeholder="Full Name">
+
+        <input type="text"
+               placeholder="Address">
+
+        <input type="text"
+               placeholder="City">
+
+        <input type="text"
+               placeholder="Pincode">
+
+        <select>
+            <option>UPI</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Cash On Delivery</option>
+        </select>
+
+        <button id="placeOrder">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+<div class="checkout-section">
+
+    <button id="openCheckout"
+            class="checkout-btn">
+
+        Proceed To Checkout
+
+    </button>
 
 </div>
 
